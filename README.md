@@ -61,9 +61,9 @@ OUTPUT_DIR=output
 REFINEMENT_ENCRYPTION_KEY=0x1234
 
 # Schema configuration
-SCHEMA_NAME=Google Drive Analytics
+SCHEMA_NAME=Spotify Analytics
 SCHEMA_VERSION=0.0.1
-SCHEMA_DESCRIPTION=Schema for the Google Drive DLP, representing some basic analytics of the Google user
+SCHEMA_DESCRIPTION=Schema for Spotify listening data DLP, representing analytics of the Spotify user
 SCHEMA_DIALECT=sqlite
 
 # IPFS configuration

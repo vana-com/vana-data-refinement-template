@@ -21,17 +21,17 @@ class Settings(BaseSettings):
     )
     
     SCHEMA_NAME: str = Field(
-        default="Google Drive Analytics",
+        default="Spotify Analytics",
         description="Name of the schema"
     )
-    
+
     SCHEMA_VERSION: str = Field(
         default="0.0.1",
         description="Version of the schema"
     )
-    
+
     SCHEMA_DESCRIPTION: str = Field(
-        default="Schema for the Google Drive DLP, representing some basic analytics of the Google user",
+        default="Schema for Spotify listening data DLP, representing analytics of the Spotify user",
         description="Description of the schema"
     )
     

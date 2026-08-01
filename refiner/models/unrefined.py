@@ -1,4 +1,4 @@
-from typing import Optional
+from typing import Optional, List
 from pydantic import BaseModel
 
 
@@ -14,6 +14,11 @@ class Metadata(BaseModel):
     collectionDate: str
     dataType: str
 
+class Listening(BaseModel):
+    topArtists: List[str]
+    recentTracks: List[str]
+    genres: List[str]
+
 class User(BaseModel):
     userId: str
     email: str
@@ -21,3 +26,4 @@ class User(BaseModel):
     profile: Profile
     storage: Optional[Storage] = None
     metadata: Optional[Metadata] = None
+    listening: Optional[Listening] = None
